@@ -145,6 +145,7 @@ main h1 {
     font-size: smaller;
     text-align: center;
     text-decoration: underline;
+    border: 2px var(--color1);
 
 
 
