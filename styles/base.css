@@ -4,6 +4,7 @@
     --color1: rgb(23, 55, 86);
     --color2: rgb(4, 4, 4);
     --color3: rgba(255, 255, 0, 0.785);
+    --color4: rgb(228, 226, 226);
     --font-family: "roboto", sans-serif;
 }
 
@@ -148,6 +149,7 @@ main h1 {
 .country h3 {
     font-size: smaller;
     text-align: center;
+    text-decoration: underline;
 
 
 
