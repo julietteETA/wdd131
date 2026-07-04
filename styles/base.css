@@ -43,7 +43,7 @@ header {
 
 header span {
     display: block;
-    color: rgb(228, 226, 226);
+    color: var(--color4);
     background-color: var(--color1);
     padding: 0.7rem;
 }
@@ -59,11 +59,11 @@ header nav {
 }
 
 header nav a {
-    color: rgb(239, 239, 239);
+    color: var(--color4);
     text-align: center;
 }
 
-header nav a:hoover {
+nav a:hover {
     text-decoration: overline;
 }
 
@@ -92,13 +92,13 @@ main h1 {
 }
 
 .card {
-    border: 0.5px solid black;
+    border: 0.5px solid var(--color2);
 }
 
 .card h2 {
     margin-top: auto;
     background-color: var(--color1);
-    color: white;
+    color: var(--color4);
     font-family: var(--font-family);
     text-size-adjust: var(--font-family);
     font-size: small;
@@ -109,11 +109,6 @@ main h1 {
     font-size: smaller;
     text-align: justify;
     justify-content: space-between;
-
-
-
-
-
 
 
 }
@@ -132,7 +127,7 @@ main h1 {
 
 }
 
-.card nav {
+.card ul {
     text-align: left;
     font-size: smaller;
     margin: 1rem;
@@ -169,7 +164,7 @@ main h1 {
 }
 
 footer {
-    color: white;
+    color: var(--color4);
     background-color: var(--color1);
     text-align: center;
 }
