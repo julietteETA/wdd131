@@ -141,11 +141,13 @@ main h1 {
 
 
 
+
 .country h3 {
     font-size: smaller;
     text-align: center;
     text-decoration: underline;
-    border: 2px solid var(--color1);
+
+
 
 
 
