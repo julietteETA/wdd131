@@ -1,0 +1,241 @@
+/* General design*/
+
+* {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+:root {
+    --color: rgb(40, 12, 66);
+    --color-var: rgb(69, 9, 126);
+    --color1: rgb(255, 255, 255);
+    --color2: yellow;
+    --color3: rgb(34, 33, 33);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 401;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+header,
+footer {
+    color: var(--color1);
+    background-color: var(--color);
+}
+
+header {
+
+    border: 1px solid var(--color-var);
+    box-shadow: 0 0 30px var(--color3);
+
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+/*1. Header design*/
+.hero {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+
+}
+
+/*Hamburger effect in the header */
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 70%;
+    border: 0;
+    background-color: none;
+    text-decoration: none;
+    color: var(--color1);
+
+
+}
+
+#menu::before {
+
+    content: "☰";
+
+}
+
+/* nav tag design */
+
+
+nav {
+    background-color: var(--color-var);
+
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+
+
+.navigation a {
+    display: block;
+    color: var(--color1);
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: larger;
+
+
+}
+
+
+
+
+
+.navigation a:hover {
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
+    font-weight: bolder;
+    font-style: oblique;
+    transition-duration: 0.5s;
+
+
+
+
+
+}
+
+.active {
+    color: var(--color2);
+
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+/* When the button is clicked - the open class is toggled*/
+.show li {
+    display: block;
+
+}
+
+.active::before {
+    content: "💡";
+
+}
+
+/*2. Main design */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    place-items: center;
+
+}
+
+figure {
+    background-color: var(--color1);
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+figcaption {
+    font-size: smaller;
+    color: var(--color);
+}
+
+.container figure:hover {
+    box-shadow: 0 0 50px var(--color-var);
+
+}
+
+.first {
+    border-radius: 15px 150px;
+
+}
+
+.second {
+    opacity: 0.5;
+}
+
+.third {
+    filter: blur(4px);
+}
+
+.forth {
+    mix-blend-mode: difference;
+
+}
+
+.fifth {
+    border-radius: 100px;
+    width: 35%;
+    margin: 0 3em 0.5em 0;
+    float: left;
+    shape-outside: circle();
+
+
+}
+
+.sixth {
+    transform: scaleX(-1);
+
+}
+
+.seventh {
+    filter: contrast(50%);
+
+}
+
+.eight {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+
+}
+
+.nine {
+    filter: blur(1px) grayscale(50%);
+
+}
+
+
+/*3. Footer design*/
+
+#lastmodified {
+    color: var(--color2);
+}

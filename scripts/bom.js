@@ -1,28 +1,28 @@
 
 // Declare three variables that hold references to the input, button a,d list elements
-    const input = document.querySelector("#favchap");
-    const button = document.querySelector("button");
-    const list = document.querySelector("list");
+const input = document.querySelector("#favchap");
+const button = document.querySelector("button");
+const list = document.querySelector("list");
 
-    // Create a li element that will hold each entry's chapter title and an associated delete button
+// Create a li element that will hold each entry's chapter title and an associated delete button
 
-    const li = document.createElement("li");
-    // Create a delete button
+const li = document.createElement("li");
+// Create a delete button
 
-    const deleteButton = document.createElement("button")
+const deleteButton = document.createElement("button")
 
-    // Populate the li element variable's textContent or innerHTML with the input value
-    li.textContent = input.value;
-    //Set the delete button's texContent
-    deleteButton.textContent = "❌";
+// Populate the li element variable's textContent or innerHTML with the input value
+li.textContent = input.value;
+//Set the delete button's texContent
+deleteButton.textContent = "❌";
 
-    //Append the delete button to the li element
+//Append the delete button to the li element
 
-    li.appendChild(deleteButton);
-    // Append the li element to the unordered list in your HTML
+li.appendChild(deleteButton);
+// Append the li element to the unordered list in your HTML
 
-    li.append(li)
-    // Create a click event listener for the Add Chapter button with addEventListener 
+li.append(li)
+// Create a click event listener for the Add Chapter button with addEventListener 
 
 
 
