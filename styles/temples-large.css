@@ -4,8 +4,8 @@
         align-items: center;
         justify-content: space-around;
         gap: 1rem;
-        
-        
+
+
 
     }
 
@@ -14,24 +14,26 @@
         flex-direction: row;
         justify-content: stretch;
         text-align: center;
-       
-       
-       
+
+
+
 
 
 
     }
+
     .navigation li {
         display: block;
         flex: 1 1 100%;
-        
+
     }
 
     .navigation a {
         flex: 1 1 100%;
-        
+
     }
-    #menu{
+
+    #menu {
         display: none;
     }
 }
