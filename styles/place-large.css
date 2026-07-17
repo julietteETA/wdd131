@@ -45,7 +45,6 @@
     .section {
         grid-template-columns: 1fr 1fr;
         position: relative;
-        justify-content: baseline;
         font-size: smaller;
 
     }
