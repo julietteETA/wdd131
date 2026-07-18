@@ -27,13 +27,14 @@
 
     h2 {
         background-color: var(--color4);
-        color: var(--color1);
+        color: var(--color);
         padding: 5%;
         top: 5%;
         margin-left: -15%;
         position: absolute;
         width: 80%;
         font-weight: bolder;
+
 
 
     }
@@ -67,14 +68,15 @@
     .weather {
         position: relative;
         background-color: var(--color3);
-        height: 50%;
-        top: 180%;
+        height: 30%;
+        top: 195%;
         padding: 5%;
         margin-left: 35%;
-        width: 40%;
+        width: 30%;
     }
-    table{
-        padding: 10%;
+
+    table {
+        padding: 20%;
     }
 
     .table {
@@ -83,7 +85,7 @@
         margin-left: 0%;
 
     }
-    
+
 
     .tr {
         padding: 5%;
@@ -102,18 +104,18 @@
 
     }
 
-
-
-    .element::after {
-        content: url(../images/weather-two.svg);
-        display: inline-block;
-
-        width: 100px;
-     
-        margin-right: 5px;
+    .pseudo::after {
+        content: "";
 
     }
-    
+
+    .element::after {
+        content: url(../images/weather-three.svg);
+        display: inline-block;
+        width: 30%;
+
+    }
+
 
     footer {
 
