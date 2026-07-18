@@ -18,4 +18,4 @@ function calculateWindChill(temperature, windSpeed) {return parseFloat((13.12 + 
 // Recommended for DRC (hot climate): use feelslike_c from the API
 //const feelsLike = weatherData.current.feelslike_c; // 27°C — already calculated for you
 // Wind Chill is more relevant when temp drops below 10°C (e.g., night in highlands)
-//if (temperature <= 10 && windSpeed > 4.8) {  const wc = calculateWindChill(temperature, windSpeed);  console.log(`Wind Chill: ${wc}°C`);} else {  console.log(`Feels Like (Heat Index): ${feelsLike}°C`);}
+if (temperature <= 10 && windSpeed > 4.8) {  const wc = calculateWindChill(temperature, windSpeed);  console.log(`Wind Chill: ${wc}°C`);} else {  console.log(`Feels Like (Heat Index): ${feelsLike}°C`);}
