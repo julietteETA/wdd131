@@ -34,7 +34,7 @@ header {
     justify-content: space-around;
     align-items: center;
     color: var(--color1);
-    background-color: var(--color4);
+    background-color: var(--color);
 
 
 
@@ -45,9 +45,10 @@ header {
 }
 
 h1 {
-    background-color: var(--color);
+    color: var(--color2);
+   
     text-justify: auto;
-    padding: 5%;
+    padding: 0%;
 
 
 
