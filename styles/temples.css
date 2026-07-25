@@ -30,7 +30,8 @@ h1 {
     font-size: 3rem;
     margin-left: 1rem;
 }
-h2{
+
+h2 {
     padding: 20px 20px;
 }
 
@@ -165,21 +166,22 @@ main {
     place-items: center;
     justify-content: space-around;
     padding-bottom: 10px;
-    
+
 
 }
 
 figure {
     background-color: var(--color1);
     padding: 10% 10% 10% 10%;
-    
+
 
 }
 
+figure,
 img {
     width: 300px;
     height: 300px;
-    margin: 0.5rem;
+  
 }
 
 figcaption {
@@ -187,10 +189,7 @@ figcaption {
     color: var(--color);
 }
 
-.container figure:hover {
-    box-shadow: 0 0 50px var(--color-var);
 
-}
 
 
 
