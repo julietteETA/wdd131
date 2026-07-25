@@ -187,8 +187,6 @@ img {
 
 #image :hover {
     box-shadow: 0 0 50px var(--color-var);
-    background-color: #ffff;
-
 }
 
 h3 {
