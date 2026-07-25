@@ -167,6 +167,9 @@ main {
     padding-bottom: 10px;
 
 }
+.container :hover {
+    box-shadow: 0 0 50px var(--color-var);
+}
 
 img {
     width: 50%;
@@ -185,9 +188,7 @@ img {
 
 
 
-#image :hover {
-    box-shadow: 0 0 50px var(--color-var);
-}
+
 
 h3 {
     text-align: center;
