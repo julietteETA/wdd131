@@ -161,19 +161,24 @@ main {
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
+    gap: 100px;
     place-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    
 
 }
 
 figure {
     background-color: var(--color1);
+    padding: 10% 10% 10% 10%;
+    
 
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0.5rem;
 }
 
