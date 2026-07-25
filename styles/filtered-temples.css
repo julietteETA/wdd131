@@ -1,0 +1,209 @@
+/* General design*/
+
+* {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+:root {
+    --color: rgb(40, 12, 66);
+    --color-var: rgb(69, 9, 126);
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(255, 255, 0);
+    --color3: rgb(34, 33, 33);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 401;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 1rem;
+    
+}
+
+h2 {
+    padding: 30px 20px 40px 10px;
+}
+
+header,
+footer {
+    color: var(--color1);
+    background-color: var(--color);
+    padding: 0.5%;
+}
+
+header {
+
+    border: 1px solid var(--color-var);
+    box-shadow: 0 0 30px var(--color3);
+
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+/*1. Header design*/
+.hero {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+
+}
+
+/*Hamburger effect in the header */
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 0;
+    text-decoration: none;
+    color: var(--color1);
+
+
+}
+
+#menu::before {
+
+    content: "☰";
+
+}
+
+/* nav tag design */
+
+
+nav {
+    display: flex;
+    background-color: var(--color-var);
+
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+
+
+.navigation a {
+    display: block;
+    color: var(--color1);
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: larger;
+
+
+}
+
+
+
+
+
+.navigation a:hover {
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
+    font-weight: bolder;
+    font-style: oblique;
+    transition-duration: 0.5s;
+
+
+
+
+
+}
+
+.active {
+    color: var(--color2);
+
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+/* When the button is clicked - the open class is toggled*/
+.show li {
+    display: block;
+
+}
+
+.active::before {
+    content: "💡";
+
+}
+
+/*2. Main design */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    
+
+
+}
+
+
+
+
+
+/* Design javascript element*/
+
+
+
+#image :hover {
+    box-shadow: 0 0 50px var(--color-var);
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    
+
+}
+
+p {
+    text-align: center;
+    font-size: small;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+/*3. Footer design*/
+
+
+
+#lastmodified {
+    color: var(--color2);
+}
