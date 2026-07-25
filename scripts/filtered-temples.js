@@ -122,7 +122,8 @@ function displayTemples(temples) {
         const cardFiltered = document.createElement("div");
         //Add a style
         cardFiltered.style.backgroundColor = "#f0ebeb";
-        cardFiltered.style.padding =    "15px"
+        
+        
 
         //The name of the temple.
         //The location of the temple.
@@ -137,9 +138,8 @@ function displayTemples(temples) {
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Size:</strong> ${temple.area} sq ft</p>
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-        `;
-        container.appendChild(cardFiltered);
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">`;
+            container.appendChild(cardFiltered);
         
         
     });
