@@ -122,6 +122,7 @@ function displayTemples(temples) {
         const cardFiltered = document.createElement("div");
         //Add a style
         cardFiltered.style.backgroundColor = "#f0ebeb";
+       
         
         
 

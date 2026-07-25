@@ -164,33 +164,26 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
-    justify-content: space-around;
-    
-
-
+    padding-bottom: 10px;
 
 }
 
 img {
     width: 50%;
     height: auto;
+    position: relative;
+    justify-content: space-around;
+    
 }
 
 
-p {
-    font-size: smaller;
-    text-align: right;
-}
 
 
 
 
 /* Design javascript element*/
 
-#image {
-    padding: 0;
-    margin: 0;
-}
+
 
 #image :hover {
     box-shadow: 0 0 50px var(--color-var);
@@ -210,14 +203,6 @@ p {
     font-size: small;
     padding-bottom: 5px;
 }
-
-
-
-
-
-
-
-
 
 
 /*3. Footer design*/
