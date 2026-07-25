@@ -89,7 +89,7 @@ const temples = [
         dedicated: "2019, April, 14",
         area: 12000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-3533-main.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-3526-thumb.jpg"
     },
     {
         templeName: "Accra Ghana ",
@@ -122,9 +122,9 @@ function displayTemples(temples) {
         const cardFiltered = document.createElement("div");
         //Add a style
         cardFiltered.style.backgroundColor = "#f0ebeb";
-       
-        
-        
+
+
+
 
         //The name of the temple.
         //The location of the temple.
@@ -140,9 +140,9 @@ function displayTemples(temples) {
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Size:</strong> ${temple.area} sq ft</p>
             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">`;
-            container.appendChild(cardFiltered);
-        
-        
+        container.appendChild(cardFiltered);
+
+
     });
 }
 
@@ -181,7 +181,7 @@ document.querySelector("#home").addEventListener("click", () => displayTemples(t
 displayTemples(temples);
 
 
-//Extra : An other to loop through the array 
+//Extra : An other to loop through the array
 //temples.forEach((temple) => {
 // const card = document.createElement("div")
 // card.classList.add("temple-card");
