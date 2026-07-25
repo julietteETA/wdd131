@@ -30,6 +30,9 @@ h1 {
     font-size: 3rem;
     margin-left: 1rem;
 }
+h2{
+    padding: 20px 20px;
+}
 
 header,
 footer {
@@ -184,55 +187,7 @@ figcaption {
 
 }
 
-.first {
-    border-radius: 15px 150px;
 
-}
-
-.second {
-    opacity: 0.5;
-}
-
-.third {
-    filter: blur(4px);
-}
-
-.forth {
-    mix-blend-mode: difference;
-
-}
-
-.fifth {
-    border-radius: 100px;
-    width: 35%;
-    margin: 0 3em 0.5em 0;
-    float: left;
-
-
-
-}
-
-.sixth {
-    transform: scaleX(-1);
-
-}
-
-.seventh {
-    filter: contrast(50%);
-
-}
-
-.eight {
-    width: 100%;
-    height: 75px;
-    object-fit: cover;
-
-}
-
-.nine {
-    filter: blur(1px) grayscale(50%);
-
-}
 
 
 /*3. Footer design*/
