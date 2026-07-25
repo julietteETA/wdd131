@@ -29,7 +29,7 @@ h1 {
     text-align: left;
     font-size: 3rem;
     margin-left: 1rem;
-    
+
 }
 
 h2 {
@@ -119,7 +119,7 @@ nav {
 
 
 .navigation a:hover {
-    border: 1px solid var(--color1);
+    border: 1px solid var(--color3);
     background-color: var(--color1);
     color: var(--color3);
     font-weight: bolder;
@@ -164,7 +164,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
-    
+
 
 
 }
@@ -184,7 +184,7 @@ main {
 h3 {
     text-align: center;
     padding-bottom: 10px;
-    
+
 
 }
 
