@@ -1,0 +1,193 @@
+* {
+    --color-secondary: rgb(48, 0, 48);
+    --color-principal: rgb(204, 188, 204);
+
+    --color-text1: rgb(86, 86, 206);
+    --font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+/* General design*/
+header,
+footer {
+    color: #fff;
+    background: var(--color-secondary);
+    text-align: center;
+    align-content: center;
+
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+main {
+    margin: 10px;
+    background: var(--color-principal);
+
+}
+
+.rating {
+    padding-bottom: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.check {
+    font-style: italic;
+}
+.required{
+    font-weight: bolder;
+}
+
+.optional{
+    font-size: smaller;
+    color: var(--color-text1);
+}
+
+
+
+
+
+
+
+
+
+/* 2.set star shape of unselected label */
+/* and set full star shape for checked label */
+
+.stars input {
+    width: 13%;
+}
+
+/* First radio*/
+.stars label[for="star-a"]::before {
+    content: '\2606';
+    position: relative;
+
+    top: -20px;
+    right: 52px;
+
+
+
+}
+
+.stars input[id="star-a"]:checked~label[for="star-a"]::before {
+    content: '\2605';
+}
+
+/* Second radio  */
+
+
+.stars label[for="star-b"]::before {
+    content: '\2606\2606';
+    position: relative;
+
+    top: -20px;
+    right: 60px;
+
+
+}
+
+.stars input[id="star-b"]:checked~label[for="star-b"]::before {
+    content: '\2605\2605';
+}
+
+/*Third radio*/
+
+.stars label[for="star-c"]::before {
+    content: '\2606\2606\2606';
+    position: relative;
+
+    top: -20px;
+    right: 68px;
+
+
+}
+
+.stars input[id="star-c"]:checked~label[for="star-c"]::before {
+    content: '\2605\2605\2605';
+}
+
+/* Forth radio*/
+.stars label[for="star-d"]::before {
+    content: '\2606\2606\2606\2606';
+    position: relative;
+
+    top: -20px;
+    right: 70px;
+}
+
+.stars input[id="star-d"]:checked~label[for="star-d"]::before {
+    content: '\2605\2605\2605\2605';
+}
+
+/* Fifth radio*/
+.stars label[for="star-e"]::before {
+    content: '\2606\2606\2606\2606\2606';
+    position: relative;
+
+    top: -45px;
+    left: 530px;
+
+    line-height: 28px;
+}
+
+.stars input[id="star-e"]:checked~label[for="star-e"]::before {
+    content: '\2605\2605\2605\2605\2605';
+}
+
+
+/*Design of form parameters */
+
+
+
+
+input[type="submit"],
+select {
+    padding: 10px 0 5px 5px;
+    
+    border-radius: 2px;
+}
+
+
+input[type="date"] {
+    padding: 10px;
+    border-radius: 2px;
+}
+input[type="text"]{
+width: 98%;
+border-radius: 2px;
+padding-right: -7%;
+}
+
+
+
+input[id="written"] {
+    padding: 50px 0 0 5px;
+    border-radius: 2px;
+
+}
+
+
+input:hover {
+    color: #fff;
+    background-color: var(--color-secondary);
+    font-weight: bolder;
+
+
+}
+
+
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: var(--color-secondary);
+    font-weight: bolder;
+
+}
