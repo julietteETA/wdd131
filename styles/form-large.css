@@ -1,7 +1,63 @@
-@media (min-width:500px) {
+@media (min-width:1000px) {
+
+    .stars input {
+            width: 15%;
+    
+        }
+    
+        .stars label[for="star-a"]::before {
+            content: '\2606';
+            position: relative;
+    
+            top: -20px;
+            right: 100px;
+    
+    
+    
+        }
+    
+        .stars label[for="star-b"]::before {
+            content: '\2606\2606';
+            position: relative;
+    
+            top: -20px;
+            right: 108px;
+    
+    
+        }
+    
+        .stars label[for="star-c"]::before {
+            content: '\2606\2606\2606';
+            position: relative;
+    
+            top: -20px;
+            right: 115px;
+    
+    
+        }
+    
+        .stars label[for="star-d"]::before {
+            content: '\2606\2606\2606\2606';
+            position: relative;
+    
+            top: -20px;
+            right: 120px;
+        }
+    
+        .stars label[for="star-e"]::before {
+            content: '\2606\2606\2606\2606\2606';
+            position: relative;
+    
+            top: -20px;
+            left:-125px;
+    
+    
+        }
 
 input[id="name"] {
        
  width: 99%;
     }
+
+
 }

@@ -8,6 +8,7 @@
     <meta name="description" content="week5 assignment to be submitted by Sunday, it is about product review">
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-medium.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -20,18 +21,18 @@
         <form method="get" action="review.html">
             <fieldset>
                 <label class="required"> Product Review*</label>
-                    <select name="review" id="review" required>
-                    <option value="" disabled> Select a Product</option>
-                    </select>
-                
+                <select name="review" id="review" required>
+                    <option value="" disabled selected> Select a Product</option>
+                </select>
+
                 <div>
                     <div class="rating required">Overall Rating*</div>
                     <div class="stars">
-                        <input type="radio" id="star-a" name="star-a" value="1" required><label for="star-a"></label>
-                        <input type="radio" id="star-b" name="star-b" value="2" required><label for="star-b"></label>
-                        <input type="radio" id="star-c" name="star-c" value="3" required><label for="star-c"></label>
-                        <input type="radio" id="star-d" name="star-e" value="4" required><label for="star-d"></label>
-                        <input type="radio" id="star-e" name="star-d" value="5" required><label for="star-e"></label>
+                        <input type="radio" id="star-a" name="star" value="1" required><label for="star-a"></label>
+                        <input type="radio" id="star-b" name="star" value="2" required><label for="star-b"></label>
+                        <input type="radio" id="star-c" name="star" value="3" required><label for="star-c"></label>
+                        <input type="radio" id="star-d" name="star" value="4" required><label for="star-d"></label>
+                        <input type="radio" id="star-e" name="star" value="5" required><label for="star-e"></label>
 
 
                     </div>
@@ -53,7 +54,7 @@
 
 
                 <label for="">Written Review <label class="optional">(optional)</label> </label>
-                
+
                 <input type="textarea" name="written" id="written">
 
                 <label for="">Your Name <label class="optional">(optional)</label></label>

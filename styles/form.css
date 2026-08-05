@@ -2,9 +2,9 @@
     --color-secondary: rgb(48, 0, 48);
     --color-principal: rgb(204, 188, 204);
 
-    --color-text1: rgb(86, 86, 206);
+    --color-text1: rgb(37, 37, 122);
     --font-family: Arial, Helvetica, sans-serif;
-   
+
 }
 
 /* General design*/
@@ -34,18 +34,19 @@ main {
 fieldset {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 
 .check {
     font-style: italic;
 }
-.required{
+
+.required {
     font-weight: bolder;
 }
 
-.optional{
+.optional {
     font-size: smaller;
     color: var(--color-text1);
 }
@@ -62,7 +63,8 @@ fieldset {
 /* and set full star shape for checked label */
 
 .stars input {
-    width: 13%;
+    width: 10%;
+
 }
 
 /* First radio*/
@@ -71,7 +73,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 52px;
+    right: 31px;
 
 
 
@@ -89,7 +91,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 60px;
+    right: 38px;
 
 
 }
@@ -105,7 +107,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 68px;
+    right: 45px;
 
 
 }
@@ -120,7 +122,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 70px;
+    right: 50px;
 }
 
 .stars input[id="star-d"]:checked~label[for="star-d"]::before {
@@ -132,10 +134,9 @@ fieldset {
     content: '\2606\2606\2606\2606\2606';
     position: relative;
 
-    top: -45px;
-    left: 530px;
-
-    line-height: 28px;
+    top: -42px;
+    left:335px;
+    
 }
 
 .stars input[id="star-e"]:checked~label[for="star-e"]::before {
@@ -151,7 +152,7 @@ fieldset {
 input[type="submit"],
 select {
     padding: 10px 0 5px 5px;
-    
+
     border-radius: 2px;
 }
 
@@ -160,10 +161,11 @@ input[type="date"] {
     padding: 10px;
     border-radius: 2px;
 }
-input[type="text"]{
-width: 98%;
-border-radius: 2px;
-padding-right: -7%;
+
+input[type="text"] {
+    width: 98%;
+    border-radius: 2px;
+    padding-right: -7%;
 }
 
 

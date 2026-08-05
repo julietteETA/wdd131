@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //Use JavaScript to populate the Product Name options where the array's name field is used for the select option display and the array's id is used for the value field.
 //Copy the following array of product objects into your JavaScript file to use as the data source.
 const products = [
+    
     {
         id: "fc-1888",
         name: "flux capacitor",
