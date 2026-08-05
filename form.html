@@ -20,10 +20,11 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <label class="required"> Product Review*</label>
+                <label  for="review"  class="required"> Product Review*</label>
                 <select name="review" id="review" required>
                     <option value="" disabled selected> Select a Product</option>
                 </select>
+                
 
                 <div>
                     <div class="rating required">Overall Rating*</div>
@@ -40,24 +41,24 @@
 
 
 
-                <label class="required"> Date of intallation*</label>
+                <label id="date" class="required"> Date of intallation*</label>
                 <input type="date" id="date" name="date" required>
 
                 <div>
                     <div > Which features did you find useful in the product?</div>
                     <div class="check">Check all that apply</div>
                 </div>
-                <label for=""><input type="checkbox" name="durability" value="yes" > Durability</label>
-                <label for=""><input type="checkbox" name="checkbox" value="yes" > Ease of Use</label>
-                <label for=""><input type="checkbox" name="checkbox" value="yes" > Performance</label>
-                <label for=""><input type="checkbox" name="design" value="yes" > Design</label>
+                <label for="durability"><input type="checkbox" name="durability" value="yes" > Durability</label>
+                <label for="Ease of Use"><input type="checkbox" name="checkbox" value="yes" > Ease of Use</label>
+                <label for="Performance"><input type="checkbox" name="checkbox" value="yes" > Performance</label>
+                <label for="Design"><input type="checkbox" name="design" value="yes" > Design</label>
 
 
-                <label for="">Written Review <label class="optional">(optional)</label> </label>
+                <label for="written">Written Review <label for="written" class="optional">(optional)</label> </label>
 
-                <input type="textarea" name="written" id="written">
+                <textarea name="written" id="written" rows="5" cols="30" placeholder="Type your written review here..."></textarea>
 
-                <label for="">Your Name <label class="optional">(optional)</label></label>
+                <label for="name">Your Name <label class="optional">(optional)</label></label>
                 <input type="text" name="name" id="name">
             </fieldset>
             <fieldset><input type="submit" value="Post Review"></fieldset>
