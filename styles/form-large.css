@@ -10,7 +10,7 @@
             position: relative;
     
             top: -20px;
-            right: 100px;
+            right: -103px;
     
     
     
@@ -21,7 +21,7 @@
             position: relative;
     
             top: -20px;
-            right: 108px;
+            right: -108px;
     
     
         }
@@ -31,7 +31,7 @@
             position: relative;
     
             top: -20px;
-            right: 115px;
+            right: -115px;
     
     
         }
@@ -41,7 +41,7 @@
             position: relative;
     
             top: -20px;
-            right: 120px;
+            right: -120px;
         }
     
         .stars label[for="star-e"]::before {
@@ -49,7 +49,7 @@
             position: relative;
     
             top: -20px;
-            left:-125px;
+            left:130px;
     
     
         }
