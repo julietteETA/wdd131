@@ -135,8 +135,8 @@ fieldset {
     position: relative;
 
     top: -20px;
-    left:50px;
-    
+    left: 50px;
+
 }
 
 .stars input[id="star-e"]:checked~label[for="star-e"]::before {
