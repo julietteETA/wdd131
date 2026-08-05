@@ -79,7 +79,7 @@ fieldset {
 
 }
 
-.stars input[id="star-a"]:checked~label[for="star-a"]::before {
+.stars input[id="star-a"]:checked~label[for="star-a"]::before{
     content: '\2605';
 }
 
