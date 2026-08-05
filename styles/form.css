@@ -63,7 +63,7 @@ fieldset {
 /* and set full star shape for checked label */
 
 .stars input {
-    width: 10%;
+    width: 8%;
 
 }
 
@@ -73,7 +73,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 31px;
+    right: 25px;
 
 
 
@@ -91,7 +91,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 38px;
+    right: 30px;
 
 
 }
@@ -107,7 +107,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 45px;
+    right: 39px;
 
 
 }
@@ -122,7 +122,7 @@ fieldset {
     position: relative;
 
     top: -20px;
-    right: 50px;
+    right: 45px;
 }
 
 .stars input[id="star-d"]:checked~label[for="star-d"]::before {
@@ -135,7 +135,7 @@ fieldset {
     position: relative;
 
     top: -42px;
-    left:335px;
+    left:293px;
     
 }
 
