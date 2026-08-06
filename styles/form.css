@@ -68,7 +68,7 @@ fieldset {
 }
 
 /* First radio*/
-.stars label[for="star-a"]::before {
+.stars label[for="one-star"]::before {
     content: '\2606';
     position: relative;
 
@@ -79,14 +79,14 @@ fieldset {
 
 }
 
-.stars input[id="star-a"]:checked~label[for="star-a"]::before{
+.stars input[id="one-star"]:checked~label[for="one-star"]::before{
     content: '\2605';
 }
 
 /* Second radio  */
 
 
-.stars label[for="star-b"]::before {
+.stars label[for="two-star"]::before {
     content: '\2606\2606';
     position: relative;
 
@@ -96,13 +96,13 @@ fieldset {
 
 }
 
-.stars input[id="star-b"]:checked~label[for="star-b"]::before {
+.stars input[id="two-star"]:checked~label[for="two-star"]::before {
     content: '\2605\2605';
 }
 
 /*Third radio*/
 
-.stars label[for="star-c"]::before {
+.stars label[for="three-star"]::before {
     content: '\2606\2606\2606';
     position: relative;
 
@@ -112,12 +112,12 @@ fieldset {
 
 }
 
-.stars input[id="star-c"]:checked~label[for="star-c"]::before {
+.stars input[id="three-star"]:checked~label[for="three-star"]::before {
     content: '\2605\2605\2605';
 }
 
 /* Forth radio*/
-.stars label[for="star-d"]::before {
+.stars label[for="four-star"]::before {
     content: '\2606\2606\2606\2606';
     position: relative;
 
@@ -125,12 +125,12 @@ fieldset {
     right: -40px;
 }
 
-.stars input[id="star-d"]:checked~label[for="star-d"]::before {
+.stars input[id="four-star"]:checked~label[for="four-star"]::before {
     content: '\2605\2605\2605\2605';
 }
 
 /* Fifth radio*/
-.stars label[for="star-e"]::before {
+.stars label[for="five-star"]::before {
     content: '\2606\2606\2606\2606\2606';
     position: relative;
 
@@ -139,7 +139,7 @@ fieldset {
 
 }
 
-.stars input[id="star-e"]:checked~label[for="star-e"]::before {
+.stars input[id="five-star"]:checked~label[for="five-star"]::before {
     content: '\2605\2605\2605\2605\2605';
 }
 

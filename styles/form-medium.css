@@ -5,7 +5,7 @@
     
         }
 
-    .stars label[for="star-a"]::before {
+    .stars label[for="one-star"]::before {
         content: '\2606';
         position: relative;
 
@@ -15,7 +15,7 @@
 
 
     }
-        .stars label[for="star-b"]::before {
+        .stars label[for="two-star"]::before {
             content: '\2606\2606';
             position: relative;
     
@@ -25,7 +25,7 @@
     
         }
 
-                .stars label[for="star-c"]::before {
+                .stars label[for="three-star"]::before {
                     content: '\2606\2606\2606';
                     position: relative;
         
@@ -35,7 +35,7 @@
         
                 }
 
-                .stars label[for="star-d"]::before {
+                .stars label[for="four-star"]::before {
                     content: '\2606\2606\2606\2606';
                     position: relative;
         
@@ -43,7 +43,7 @@
                     right: -65px;
                 }
 
-                .stars label[for="star-e"]::before {
+                .stars label[for="five-star"]::before {
                                     content: '\2606\2606\2606\2606\2606';
                                     position: relative;
                 
