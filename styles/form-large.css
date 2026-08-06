@@ -1,7 +1,7 @@
 @media (min-width:1000px) {
 
     .stars input {
-            width: 15%;
+            width: 16%;
     
         }
     
@@ -10,7 +10,7 @@
             position: relative;
     
             top: -20px;
-            right: -103px;
+            right: 107px;
     
     
     
@@ -21,7 +21,7 @@
             position: relative;
     
             top: -20px;
-            right: -108px;
+            right: 115px;
     
     
         }
@@ -31,7 +31,7 @@
             position: relative;
     
             top: -20px;
-            right: -115px;
+            right: 120px;
     
     
         }
@@ -41,15 +41,15 @@
             position: relative;
     
             top: -20px;
-            right: -120px;
+            right: 127px;
         }
     
         .stars label[for="five-star"]::before {
             content: '\2606\2606\2606\2606\2606';
             position: relative;
     
-            top: -20px;
-            left:130px;
+            top: -41px;
+            left:1026px;
     
     
         }
