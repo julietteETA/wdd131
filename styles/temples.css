@@ -54,6 +54,8 @@ main {
     margin: 0 auto;
 }
 
+
+
 /*1. Header design*/
 .hero {
     display: flex;
@@ -181,7 +183,7 @@ figure,
 img {
     width: 300px;
     height: 300px;
-  
+
 }
 
 figcaption {

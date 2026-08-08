@@ -1,0 +1,75 @@
+@media (min-width: 740px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+
+
+
+    }
+    h1{
+        font-size: 144px;
+    }
+
+
+    .navigation {
+        flex-direction: row;
+        justify-content: stretch;
+        text-align: center;
+
+
+
+
+
+
+    }
+
+    .navigation li {
+        display: flex;
+        flex: 1 1 auto;
+     
+        
+
+    }
+    
+
+    .navigation a {
+        flex: 1 1 100%;
+
+    }
+
+    #menu {
+        display: none;
+    }
+   
+    /* Create profile style*/
+        .registration input[type="text"],
+        .registration input[type="tel"],
+        .registration input[type="email"],
+    
+        .registration select,
+        .registration input[type="date"],
+        .registration input[type="select"],
+    
+        .registration textarea,
+        .registration input[type="submit"] {
+    
+            
+            max-width: 800px;
+    
+    
+        }
+
+        /*Find Your House*/
+                  img {
+                      width: 80%;
+                      height: auto;
+                      float: inherit;
+                  }
+        
+                  .container {
+                      margin: auto;
+                      margin-bottom: 10px;
+                  }
+}
