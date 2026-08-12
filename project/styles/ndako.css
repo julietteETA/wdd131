@@ -403,7 +403,15 @@ footer {
     margin: 0 auto;
 }
 
-.container {
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    padding-bottom: 10px;
+    
+
+}
+.contain{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
@@ -413,6 +421,10 @@ footer {
 
 .container :hover {
     box-shadow: 0 0 50px var(--color2);
+}
+.contain{
+    box-shadow: 0 0 50px var(--color2);
+
 }
 
 .find img {
@@ -452,3 +464,10 @@ footer {
 
 
 }
+ /*About Us page*/
+ .info img{
+    width: 80% ;
+ }
+ .request{
+    margin-left: 10%;
+ }

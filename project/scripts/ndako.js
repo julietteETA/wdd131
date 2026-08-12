@@ -21,7 +21,11 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
 });
 
+
+
+
 //3.Codes for find you House page
+
 const houses = [
     {
         houseNumber: "n°1",
@@ -200,7 +204,6 @@ displayHouses(houses);
 
 
 
-
 // For create an account Use JavaScript to populate the Product Name options where the array's name field is used for the select option display and the array's id is used for the value field.
 
 const categories = [
@@ -227,7 +230,7 @@ const categories = [
 // Wait for the DOM to fully load before running scripts
 document.addEventListener("DOMContentLoaded", () => {
     populateCategory();
-    trackRegistration();
+
 });
 
 /**
@@ -250,26 +253,25 @@ function populateCategory() {
 /**
  * Tracks and increments the review counter in localStorage
  */
-function trackRegistration() {
-    // Check if this page load is the result of a form submission
-    // (Commonly handled by checking a URL parameter like '?submit=true' or checking sessionStorage)
-    const urlParams = new URLSearchParams(window.location.search);
-    const isFormSubmitted = urlParams.has("submit");
+// Initialize display element
+const visitDisplay = document.querySelector(".visits");
+// Get the stored value
 
-    if (isFormSubmitted) {
-        // Retrieve the current count, defaulting to 0 if it doesn't exist
-        let registrationCount = parseInt(localStorage.getItem("registrationCount")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+if (numVisits !== 0) {
+    visitDisplay.textContent = numVisits;
+} else {
+    visitDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
 
-        // Increment the counter
-        registrationCount += 1;
+//  increment the number of visits by one.
+numVisits++;
+// 5store the new visit total into localStorage, key=numVisits-ls
+localStorage.setItem("numVisits-ls", numVisits);
 
-        // Save the updated count back to localStorage
-        localStorage.setItem("registrationCount", registrationCount);
 
-        console.log(`Total registrations completed: ${registrationCount}`);
-    }
 
-};
+
 
 //5.Codes for find you commission
 
@@ -280,7 +282,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 1,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
     },
     {
         name: "Ruth Kadiri",
@@ -288,7 +290,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 2,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd6Yx8KQvzuIV4yihxSqCWSXOWwqLtK6DD2AIxp2AhAQ&s"
 
     },
     {
@@ -297,7 +299,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 3,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -306,7 +308,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 4,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -315,7 +317,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 5,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -324,7 +326,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 5,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -333,7 +335,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 5,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -342,7 +344,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 6,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -351,7 +353,7 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 5,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     },
     {
@@ -360,19 +362,20 @@ const agents = [
         activityArea: "Bandalungwa, Gombe, Ngaliema",
         commissionFeeRange: "10-20",
         rating: 5,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+        commissionUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
 
     }];
 
+
 //Select the container element
-const contain = document.getElementById("com");
+const contain = document.getElementById("commission");
 
 function displayAgents(agents) {
     contain.innerHTML = "";
     agents.forEach(agent =>
     // Create card container
     {
-        const card = document.createElement("div");
+        const card = document.createElement("section");
         //Add a style
         card.style.backgroundColor = "#0dc0ec";
 
@@ -386,10 +389,10 @@ function displayAgents(agents) {
         <p><strong>Activity Area:</strong> ${agent.activityArea}</p>
         <p><strong>Commission fee range:</strong> ${agent.commissionFeeRange} $</p>
         <p><strong>Rating:</strong> ${array.rating} </p>
-        <img src="${agent.imageUrl}" alt="${agent.name}" loading="lazy" >`;
-        container.appendChild(card);
+        <img src="${agent.commissionUrl}" alt="${agent.name}" loading="lazy" >`;
+        contain.appendChild(card);
 
 
     });
-}
+};
 displayAgents(agents);
