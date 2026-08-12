@@ -5,11 +5,15 @@
         justify-content: space-around;
         gap: 1rem;
 
-
+        .svg {
+            width: 10%;
+            height: auto;
+        }
 
     }
-    h1{
-        font-size: 144px;
+
+    h1 {
+        font-size: 96px;
     }
 
 
@@ -28,48 +32,57 @@
     .navigation li {
         display: flex;
         flex: 1 1 auto;
-     
-        
+
+
 
     }
-    
+
 
     .navigation a {
         flex: 1 1 100%;
+        align-items: center;
+        justify-content: center;
 
     }
 
     #menu {
         display: none;
     }
-   
+
     /* Create profile style*/
-        .registration input[type="text"],
-        .registration input[type="tel"],
-        .registration input[type="email"],
-    
-        .registration select,
-        .registration input[type="date"],
-        .registration input[type="select"],
+    .registration input[type="text"],
+    .registration input[type="tel"],
+    .registration input[type="email"],
+    .registration input[type="date"],
+    .registration select,
     
         .registration textarea,
-        .registration input[type="submit"] {
-    
-            
-            max-width: 800px;
-    
-    
-        }
+        .registration input[type="submit"]
 
-        /*Find Your House*/
-                  img {
-                      width: 80%;
-                      height: auto;
-                      float: inherit;
-                  }
-        
-                  .container {
-                      margin: auto;
-                      margin-bottom: 10px;
-                  }
+    {
+
+
+        max-width: 800px;
+
+
+    }
+    .registration textarea,
+    .registration select
+    {
+        margin-right: 10%;
+    }
+       
+
+
+
+
+    /*Find Your House*/
+
+
+    .container {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+   
 }

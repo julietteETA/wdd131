@@ -155,7 +155,7 @@ const houses = [
         imageUrl:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA6gCE7oCVN7RP4QDMlvK1UPAmSG2vsSjxvnzBxSj92g&s=10"
     }
-    ,
+
 
 ];
 
@@ -170,7 +170,7 @@ function displayHouses(houses) {
         const cardFiltered = document.createElement("div");
         //Add a style
         cardFiltered.style.backgroundColor = "#b0eefe";
-        
+
 
 
 
@@ -196,25 +196,30 @@ displayHouses(houses);
 
 
 
+
+
+
+
+
 // For create an account Use JavaScript to populate the Product Name options where the array's name field is used for the select option display and the array's id is used for the value field.
 
 const categories = [
 
     {
-        id: "nd-1",
-        name: "Client",
+        id: 1,
+        name: "Client"
 
     },
     {
-        id: "nd-2",
-        name: " Real Estate Commission Agent",
+        id: 2,
+        name: " Real Estate Commission Agent"
 
     },
     {
-        id: "nd-3",
-        name: "Real Estate Owner",
+        id: 3,
+        name: "Real Estate Owner"
 
-    },
+    }
 
 ];
 
@@ -249,7 +254,7 @@ function trackRegistration() {
     // Check if this page load is the result of a form submission
     // (Commonly handled by checking a URL parameter like '?submit=true' or checking sessionStorage)
     const urlParams = new URLSearchParams(window.location.search);
-    const isFormSubmitted = urlParams.has("submit") || document.referrer.includes("identification.html");
+    const isFormSubmitted = urlParams.has("submit");
 
     if (isFormSubmitted) {
         // Retrieve the current count, defaulting to 0 if it doesn't exist
@@ -264,4 +269,127 @@ function trackRegistration() {
         console.log(`Total registrations completed: ${registrationCount}`);
     }
 
+};
+
+//5.Codes for find you commission
+
+const agents = [
+    {
+        name: "Anael Lukusa",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 1,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+    },
+    {
+        name: "Ruth Kadiri",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 2,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "Juliette Phemba",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 3,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "François Muteba ",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 4,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "Ali Magnus",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 5,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "She Okitundu",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 5,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "Joseph Kabila",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 5,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "Félix Tshisekedi",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 6,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "Malcom Biata",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 5,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    },
+    {
+        name: "Arsene Kazadi",
+        location: "Ngaliema, Kinshasa",
+        activityArea: "Bandalungwa, Gombe, Ngaliema",
+        commissionFeeRange: "10-20",
+        rating: 5,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_JdxWTO2U3FJOeupqgxQNkcx-9iCscPepOTDls6SGQ&s=10"
+
+    }];
+
+//Select the container element
+const contain = document.getElementById("com");
+
+function displayAgents(agents) {
+    contain.innerHTML = "";
+    agents.forEach(agent =>
+    // Create card container
+    {
+        const card = document.createElement("div");
+        //Add a style
+        card.style.backgroundColor = "#0dc0ec";
+
+
+
+
+        card.innerHTML = `
+        <h3>${agent.name}</h3>
+    
+        <p><strong>Location:</strong> ${agent.location}</p>
+        <p><strong>Activity Area:</strong> ${agent.activityArea}</p>
+        <p><strong>Commission fee range:</strong> ${agent.commissionFeeRange} $</p>
+        <p><strong>Rating:</strong> ${array.rating} </p>
+        <img src="${agent.imageUrl}" alt="${agent.name}" loading="lazy" >`;
+        container.appendChild(card);
+
+
+    });
 }
+displayAgents(agents);
