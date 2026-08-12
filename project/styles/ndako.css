@@ -470,4 +470,24 @@ footer {
  }
  .request{
     margin-left: 10%;
+    background-color:var(--color3);
+    
+ }
+ .request input:valid{
+    background-color: aquamarine;
+ }
+ .request input:invalid{
+    background-color: rgb(245, 13, 13);
+    color: white;
+ }
+ 
+
+ .request textarea{
+    padding-right: 4%;
+    padding-bottom: 10%;
+ }
+
+ .request textarea:hover{
+    background-color: var(--color1);
+    font-weight: bolder;
  }
