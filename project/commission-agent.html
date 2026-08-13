@@ -7,14 +7,26 @@
     <meta name="description"
         content="NDAKO, from  DR Congo local languages (LINGALA) means house, is website helping people find house, and house owners find clients">
     <meta name="author" content="Juliette Phemba Ngoma">
-    <title>Commission Agent</title>
+    <title>NDAKO-Find Your House</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="styles/ndako.css">
     <link rel="stylesheet" href="styles/ndako-large.css">
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Leaflet Routing Machine JS -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script src="scripts/ndako1.js" defer></script>
     <script src="scripts/ndako.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,401;1,75..100,401&display=swap"
         rel="stylesheet">
+  
 </head>
 
 <body>
@@ -32,6 +44,7 @@
         <nav>
 
             <ul class="navigation">
+
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="commission-agent.html">Find Your Agent</a></li>
@@ -42,15 +55,34 @@
             </ul>
         </nav>
     </header>
-    <main class="find">
-
-        <h2>Find Your Commission Agent📍</h2>
-
-        <section  id="commission">
-            <h3> From the highest ranked to the lowest ranked</h3>
-        </section>
+    <main>
         
-    
+            <main>
+            
+                <h2>Find Your Commission Agent📍</h2>
+            
+                <section class="find" >
+                    <img src="images/owner3.jpg" alt="owner" loading="lazy">
+
+                </section>
+
+                <!-- Info panel shown above the map -->
+                <div id="info-panel">
+                    <span id="info-text">Click anywhere on the map to set your location</span>
+                </div>
+                
+                <!-- The map container -->
+                <div id="map"></div>
+
+            
+            
+            
+            </main>
+
+
+        
+
+
 
 
     </main>

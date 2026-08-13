@@ -491,3 +491,29 @@ footer {
     background-color: var(--color1);
     font-weight: bolder;
  }
+
+ /* Style for commission agent with AI*/
+
+
+
+/* Info panel at the top */
+#info-panel {
+    
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 2px solid var(--color2);
+    color: var(--color2);
+    min-height: 45px;
+}
+
+/* Map fills the rest of the screen */
+#map {
+    flex: 1;
+    width: 100%;
+}
+
+/* Hide the default routing machine panel (we use our own info panel) */
+.leaflet-routing-container {
+    display: none ;
+}
