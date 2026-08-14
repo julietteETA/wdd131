@@ -78,7 +78,9 @@
 
     /*Find Your House*/
 
-
+    .find{
+        max-width: 740px;
+    }
     .container {
         margin: auto;
         margin-bottom: 10px;

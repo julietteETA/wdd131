@@ -16,8 +16,8 @@ const infoText = document.getElementById('info-text');
 const map = L.map('map').setView(SERVER_COORDS, 13);
 
 // ─── 5. Load OpenStreetMap background tiles ───────────────────────────────────
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 // ─── 6. Add a fixed marker for the server ────────────────────────────────────

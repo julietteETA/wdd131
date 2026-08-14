@@ -257,17 +257,18 @@ function populateCategory() {
 const visitDisplay = document.querySelector(".visits");
 // Get the stored value
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-if (numVisits !== 0) {
-    visitDisplay.textContent = numVisits;
+let houseNumber = Number(window.localStorage.getItem("houseNumber")) || 0;
+if (houseNumber !== 0) {
+    visitDisplay.textContent = houseNumber;
 } else {
     visitDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
 
 //  increment the number of visits by one.
-numVisits++;
-// 5store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem("numVisits-ls", numVisits);
+houseNumber++;
+// 5store the new visit total into localStorage, key=houseNumber
+window.localStorage.setItem("houseNumber", houseNumber);
+
 
 
 
